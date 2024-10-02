@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robotic Arm Model">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0585342649808002 0.182215694262824 0.35037532981359"
+        rpy="0 0 0" />
+      <mass
+        value="5.77381173614036" />
+      <inertia
+        ixx="0.0364380505052279"
+        ixy="-3.46946895773026E-05"
+        ixz="-0.000799936448585285"
+        iyy="0.0664552143591384"
+        iyz="4.11663902386086E-05"
+        izz="0.036401837454251" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Empty_Link1">
+    <inertial>
+      <origin
+        xyz="0.00145859964091977 0.0387237165547865 -0.00142536275150962"
+        rpy="0 0 0" />
+      <mass
+        value="5.77381173614036" />
+      <inertia
+        ixx="0.0364380505052279"
+        ixy="-3.46946895773026E-05"
+        ixz="-0.000799936448585286"
+        iyy="0.0664552143591384"
+        iyz="4.11663902386084E-05"
+        izz="0.036401837454251" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="fixed">
+    <origin
+      xyz="0.0570756653398804 -0.351800692565099 0.143491977708037"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Empty_Link2">
+    <inertial>
+      <origin
+        xyz="-0.0590808595379593 0.0847966819724909 0.00385201397332197"
+        rpy="0 0 0" />
+      <mass
+        value="2.38798664508945" />
+      <inertia
+        ixx="0.0123860015393516"
+        ixy="0.0094286751047991"
+        ixz="0.000615768517679245"
+        iyy="0.0168144489721825"
+        iyz="-0.000551255347806181"
+        izz="0.0246354467642524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.694117647058824 0.0980392156862745 0.0980392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="continuous">
+    <origin
+      xyz="0 0.085 0"
+      rpy="3.14159265358979 0.349395394583499 3.14159265358979" />
+    <parent
+      link="Empty_Link1" />
+    <child
+      link="Empty_Link2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Empty_Link3">
+    <inertial>
+      <origin
+        xyz="-0.149433879648228 0.0361791698048491 0.00957194762430486"
+        rpy="0 0 0" />
+      <mass
+        value="1.04382818214251" />
+      <inertia
+        ixx="0.000686109866113672"
+        ixy="-1.85485693050337E-05"
+        ixz="0.000238293489726804"
+        iyy="0.0191116685958744"
+        iyz="2.08793224686613E-05"
+        izz="0.0187211001441184" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.168627450980392 0.168627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="continuous">
+    <origin
+      xyz="-0.15 0.16 0"
+      rpy="-1.5707963267949 0 -1.76980689671475" />
+    <parent
+      link="Empty_Link2" />
+    <child
+      link="Empty_Link3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Empty_Link4">
+    <inertial>
+      <origin
+        xyz="0.0268093899344886 0.0407230678494956 0.117597741318088"
+        rpy="0 0 0" />
+      <mass
+        value="2.01095078158" />
+      <inertia
+        ixx="0.0104328064735526"
+        ixy="-0.000126457281654061"
+        ixz="-0.000110456179386873"
+        iyy="0.0101650421588793"
+        iyz="-0.000396797008448082"
+        izz="0.00255962612806767" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="continuous">
+    <origin
+      xyz="-0.349999999999999 0 0"
+      rpy="-2.82861504819647 0 -1.57079632679489" />
+    <parent
+      link="Empty_Link3" />
+    <child
+      link="Empty_Link4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Empty_Link5">
+    <inertial>
+      <origin
+        xyz="-0.0354999999999988 -0.0604446228348201 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.350163147443722" />
+      <inertia
+        ixx="0.000398723088450973"
+        ixy="-5.52688998083431E-19"
+        ixz="0"
+        iyy="0.00024276795345804"
+        iyz="5.58406470477397E-19"
+        izz="0.000397028787055845" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5"
+    type="continuous">
+    <origin
+      xyz="0 0.0450000000000014 0.360999999999996"
+      rpy="-2.97767767370237 0 3.14159265358979" />
+    <parent
+      link="Empty_Link4" />
+    <child
+      link="Empty_Link5" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Empty_Link6">
+    <inertial>
+      <origin
+        xyz="-0.000122116481157786 0.00588944668682212 5.23054932699552E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.00272590501063231" />
+      <inertia
+        ixx="1.90741813477604E-07"
+        ixy="-1.06961336599985E-09"
+        ixz="1.477117610218E-14"
+        iyy="3.25078082213452E-07"
+        iyz="-1.24380668615327E-16"
+        izz="1.97280816368626E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6"
+    type="fixed">
+    <origin
+      xyz="-0.0354999999999989 -0.121208000000002 0"
+      rpy="-3.14159265358979 0.223444607326663 3.14159265358979" />
+    <parent
+      link="Empty_Link5" />
+    <child
+      link="Empty_Link6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Empty_Link7">
+    <inertial>
+      <origin
+        xyz="-0.000460356692338015 0.0129118482332826 0.00189952960173556"
+        rpy="0 0 0" />
+      <mass
+        value="0.00191662826234289" />
+      <inertia
+        ixx="2.93165916633446E-07"
+        ixy="1.60422569141355E-08"
+        ixz="-1.67601698210962E-09"
+        iyy="5.54016279064022E-08"
+        iyz="4.70795673887714E-08"
+        izz="2.98644523207717E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic Arm Model/meshes/Empty_Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7"
+    type="fixed">
+    <origin
+      xyz="0.0235637229037757 0.00901700000000016 -0.0016414251186383"
+      rpy="1.57079632679552 1.56431708984392 -3.14159265358916" />
+    <parent
+      link="Empty_Link6" />
+    <child
+      link="Empty_Link7" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
